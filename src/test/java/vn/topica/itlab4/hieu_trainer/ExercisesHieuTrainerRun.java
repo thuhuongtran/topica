@@ -1,8 +1,10 @@
 package vn.topica.itlab4.hieu_trainer;
 
+import org.apache.poi.ss.formula.functions.T;
 import org.junit.Test;
 import vn.topica.itlab4.exercises.hieu_trainer.Exercises1_17;
 import vn.topica.itlab4.exercises.hieu_trainer.exercises18_36.ExerciseRun18_36;
+import vn.topica.itlab4.exercises.hieu_trainer.generic.*;
 
 public class ExercisesHieuTrainerRun {
     private Exercises1_17 run1_17 = Exercises1_17.getInstance();
@@ -207,6 +209,24 @@ public class ExercisesHieuTrainerRun {
     @Test
     public void testEx36() {
         run18_36.updateStudent();
+    }
+
+    /**
+     * Every animals in zoo say hello
+     */
+    @Test
+    public void genericTest() {
+        Zoo<Animal> zoo = new Zoo<>();
+        zoo.add(new Dog("Han"));
+        zoo.add(new Fish("Doln"));
+        zoo.add(new Tiger("Hummu"));
+        zoo.add(new Dog("Katie"));
+        zoo.add(new Dog("Jack"));
+        zoo.add(new Fish("Jumie"));
+        zoo.add(new Tiger("Dana"));
+        zoo.add(new Fish("Jin"));
+
+        zoo.sayHello();
     }
 }
 
