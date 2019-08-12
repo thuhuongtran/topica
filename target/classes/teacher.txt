@@ -1,7 +1,0 @@
-Name: Dan Niel,Birth: Wed Dec 12 00:00:00 ICT 1990, Place: Hanoi, Vietnam
-
-Name: Quy Caco,Birth: Sun May 14 00:00:00 ICT 1989, Place: Hanoi, Vietnam
-
-Name: Brai Muai,Birth: Fri Sep 08 00:00:00 ICT 1989, Place: Hanoi, Vietnam
-
-Name: Khan Del,Birth: Thu Jun 14 00:00:00 ICT 1990, Place: Hanoi, Vietnam
