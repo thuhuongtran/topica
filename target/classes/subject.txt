@@ -1,5 +1,0 @@
-Name: machine , Start: Tue Apr 23 00:00:00 ICT 2019 , End: Thu May 23 00:00:00 ICT 2019
-Name: mechanics , Start: Sun Jun 02 00:00:00 ICT 2019 , End: Wed Jul 03 00:00:00 ICT 2019
-Name: iot , Start: Sat May 04 00:00:00 ICT 2019 , End: Wed Aug 07 00:00:00 ICT 2019
-Name: aop , Start: Sun May 05 00:00:00 ICT 2019 , End: Sun Jul 07 00:00:00 ICT 2019
-Name: programming , Start: Tue Aug 06 00:00:00 ICT 2019 , End: Thu Sep 05 00:00:00 ICT 2019
