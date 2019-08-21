@@ -14,6 +14,7 @@ import java.util.Random;
  * Với các class Lamp có status là off thì random ngẫu nhiên 0-1:
  * - Nếu bằng 0 thì loại bỏ ra khỏi trash vào không add lại vào class Store
  * - Nếu bằng 1 thì chuyển trạng thái thành repair và add lại vào class Store
+ * Link GITHUB: https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/thread
  */
 public class LampAdvanceFactory {
     private static LampAdvanceFactory instance = new LampAdvanceFactory();
@@ -78,7 +79,7 @@ public class LampAdvanceFactory {
 
     private static class TrashThread extends Thread {
         /**
-         * Remove all lamps which have status = OFF from store
+         * Remove all lamps which have status = OFF & REPAIR from store
          * Then add in trash
          */
         @Override
@@ -87,10 +88,13 @@ public class LampAdvanceFactory {
             while (true) {
                 for (int i = 0; i < store.size(); i++) {
                     Lamp lamp = store.get(i);
-                    if (trash.addRepairAndOff(lamp)) {
-                        System.out.println(String.format("THREAD_2 trash: TRASH add new lamp: %s", lamp.toString()));
+                    if (lamp.getStatus().equals(Lamp.Status.OFF.name())
+                            || lamp.getStatus().equals(Lamp.Status.REPAIR.name())) {
+                        if (store.remove(lamp))
+                            System.out.println(String.format("THREAD_2 trash: Remove lamp from STORE: %s", lamp.toString()));
+                        if (trash.add(lamp))
+                            System.out.println(String.format("THREAD_2 trash: TRASH add new lamp: %s", lamp.toString()));
                     }
-                    store.removeAll(trash);
                 }
                 try {
                     Thread.sleep(200);
@@ -117,26 +121,22 @@ public class LampAdvanceFactory {
                 for (int i = 0; i < trash.size(); i++) {
                     Lamp lamp = trash.get(i);
                     if (lamp.getStatus().equals(Lamp.Status.REPAIR.name())) {
-                        if (trash.remove(lamp)) {
+                        if (trash.remove(lamp))
                             System.out.println(String.format("THREAD_3 Repair: Remove repair-lamp from TRASH: %s", lamp.toString()));
-                        }
-                        if (store.add(lamp)) {
-                            String.format("THREAD_3 Repair: Add old-repair-lamp to STORE: %s", lamp.toString());
-                        }
+                        if (store.add(lamp))
+                            System.out.println(String.format("THREAD_3 Repair: Add old-repair-lamp to STORE: %s", lamp.toString()));
                     } else if (lamp.getStatus().equals(Lamp.Status.OFF.name())) {
                         int random = (new Random()).nextInt(2);
+                        if (trash.remove(lamp))
+                            System.out.println(String.format("THREAD_3 Repair: CASE = %d, Remove old-off-lamp from TRASH: %s"
+                                    , random
+                                    , lamp.toString()));
                         if (random == 1) {
                             lamp.setStatus(Lamp.Status.REPAIR.name());
-                            if (store.add(lamp)) {
-                                System.out.println(String.format("THREAD_3 Repair: CASE = %d, Add old-off-lamp to STORE: %s"
+                            if (store.add(lamp))
+                                System.out.println(String.format("THREAD_3 Repair: CASE = %d, Add update-off_repair-lamp to STORE: %s"
                                         , random
                                         , lamp.toString()));
-                            }
-                        }
-                        if (trash.remove(lamp)) {
-                            System.out.println(String.format("THREAD_3 Repair: CASE = %d, Remove off-lamp from TRASH: %s",
-                                    random
-                                    , lamp.toString()));
                         }
                     }
                 }

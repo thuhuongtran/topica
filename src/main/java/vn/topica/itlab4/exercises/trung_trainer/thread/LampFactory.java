@@ -8,6 +8,7 @@ import java.util.Random;
  * Thread 1(Sleep 100 ms): Tạo đèn
  * - Random ngẫu nhiên giá trị từ 1-20 để sinh ra số lượng đèn với status là ngẫu nhiên
  * Thread 2(Sleep 200 ms): Kiểm tra và loại bỏ toàn bộ những đèn có status là off được lưu trong class Store
+ * Link GITHUB: https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/thread
  */
 public class LampFactory {
     private static LampFactory instance = new LampFactory();
@@ -43,7 +44,7 @@ public class LampFactory {
             System.out.println("THREAD_1 STORE starts running.");
             Random random = new Random();
             while (true) {
-                for (int i = 0; i < random.nextInt(20)+1; i++) {
+                for (int i = 0; i < random.nextInt(20) + 1; i++) {
                     int temp = random.nextInt(100);
                     Lamp lamp;
                     if (temp % 2 == 0) {
@@ -76,10 +77,12 @@ public class LampFactory {
             while (true) {
                 for (int i = 0; i < store.size(); i++) {
                     Lamp lamp = store.get(i);
-                    if (trash.add(lamp)) {
-                        System.out.println(String.format("THREAD_2 trash: TRASH add new lamp: %s", lamp.toString()));
+                    if (lamp.getStatus().equals(Lamp.Status.OFF.name())) {
+                        if (store.remove(lamp))
+                            System.out.println(String.format("THREAD_2 trash: Remove lamp from STORE: %s", lamp.toString()));
+                        if (trash.add(lamp))
+                            System.out.println(String.format("THREAD_2 trash: TRASH add new lamp: %s", lamp.toString()));
                     }
-                    store.removeAll(trash);
                 }
                 try {
                     Thread.sleep(200);
