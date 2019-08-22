@@ -4,6 +4,17 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.util.*;
 
+/**
+ * Bài tập môn Collecion:
+ *
+ * Tạo một danh sách trong đó có 1000 đối tượng tạo ra từ lớp "Circle".
+ * "Circle" có một thuộc tính duy nhất là "radius"(số nguyên dương).
+ * Giá trị của "radius" là ngẫu nhiên trong khoảng 1-1000.
+ * Yêu cầu 1: Sắp xếp danh sách này theo chiều "radius" tăng dần
+ * Yêu cầu 2: Viết chương trình cho phép nhập từ màn hình console một con số(số tự nhiên).
+ * Tìm và in ra vị trí(index) và diện tích của "Circle" có diện tích gần với con số nhập vào nhất.
+ */
+// Link GitHub: https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/song_trainer/collection
 public class CircleFactory {
     private static final CircleFactory instance = new CircleFactory();
 
@@ -63,7 +74,9 @@ public class CircleFactory {
                 break;
             }
         }
-        System.out.printf("We find the best Circle with the radius = %d. And the index of the circle in list = %d", circles.get(mid).getRadius(), mid);
+        System.out.printf("We find the best Circle with the radius = %d. And the index of the circle in list = %d"
+                , circles.get(mid).getRadius()
+                , mid);
         return mid;
     }
 
