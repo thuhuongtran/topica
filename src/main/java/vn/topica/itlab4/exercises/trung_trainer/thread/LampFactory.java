@@ -2,14 +2,6 @@ package vn.topica.itlab4.exercises.trung_trainer.thread;
 
 import java.util.Random;
 
-/**
- * Exercise 1: Bài 1(6 điểm):
- * - Viết một chương trình gầm 2 thread có chức năng như sau:
- * Thread 1(Sleep 100 ms): Tạo đèn
- * - Random ngẫu nhiên giá trị từ 1-20 để sinh ra số lượng đèn với status là ngẫu nhiên
- * Thread 2(Sleep 200 ms): Kiểm tra và loại bỏ toàn bộ những đèn có status là off được lưu trong class Store
- * Link GITHUB: https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/thread
- */
 public class LampFactory {
     private static LampFactory instance = new LampFactory();
     private static Store store;
