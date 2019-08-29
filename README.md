@@ -1,5 +1,5 @@
 # TOPICA EXERCISES 
-### *JAVA* exercises branch: [`thuhuong`](https://github.com/thuhuongtran/topica/tree/thuhuong)
+### *JAVA* exercises branch: [`java`](https://github.com/thuhuongtran/topica/tree/thuhuong)
 #### Source-code folder: java/main/vn/topica/itlab4/exercises
 #### `Bài tập Thầy Trung:`
 **java/main/vn/topica/itlab4/exercises/trung_trainer**
