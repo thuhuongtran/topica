@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrapValidator.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="validator.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrapValidator.min.css">
+  <title>Topica registration</title>
+  <style>
+    .has-error .help-block{
+      color: #e20608;
+    }
+  </style>
+</head>
+<body>
+<div class="modal fade bg-dark" id="modalRegister">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-light">
+        <h4 class="modal-title">Sign Up</h4>
+        <button type="button" class="close" data-dismiss="modal">x</button>
+      </div>
+      <div class="modal-body">
+        <form action="#" id="formRegister" method="post">
+          <div class="form-group">
+            <label class="small font-weight-bold" for="name">Full name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your full name here">
+          </div>
+          <div class="form-group">
+            <label class="small font-weight-bold" for="uname">Username</label>
+            <input type="text" name="uname" id="uname" class="form-control" placeholder="Enter your username here">
+          </div>
+          <div class="form-group">
+            <label class="small font-weight-bold" for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Enter your password here">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
