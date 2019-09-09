@@ -1,0 +1,53 @@
+TOPICA_2, MC_NQ, Bella Lin, 29/07/2019, 1
+CD_7, MC_CR, Opan LAn, 04/01/2018, 1
+TOPICA_9, MC_DE, Anna Yin Teu, 06/02/2018, 1
+TOPICA_14, MC_EW, Kun Tue Jinka, 12/02/2017, 1
+CD_16, MC_TO, Beijing Han Kun, 28/12/2018, 1
+CD_18, MC_AA, Una Ena, 22/10/2017, 1
+TOPICA_19, MC_BB, Oin van Oie, 11/03/2019, 1
+TOPICA_33, MC_REMA, Yun ninNa, 09/07/2019, 1
+CD_3, MC_NA, Hung Han, 17/11/2018, 2
+CD_8, MC_TY, Hanna Jin, 05/02/2015, 2
+TOPICA_12, MC_RE, YiN   Ny, 09/07/2019, 2
+CD_13, MC_TH, Aquan Onna, 16/03/2018, 2
+TOPICA_17, MC_EE, Dain TuE Yun Kin, 30/11/2016, 2
+CD_1, MC_TK, David  tue VAN Kai, 23/05/2019, 3
+TOPICA_6, MC_TU, Quin Bai, 01/06/2017, 3
+CD_11, MC_AW, Mumma Em Tue VAN, 08/10/2016, 3
+TOPICA_34, MC_REN, BIll tue BiN, 09/07/2019, 3
+CD_4, MC_AN, Belji vAn Dan, 13/09/2016, 4
+TOPICA_10, MC_DA, OlIn Van Pun, 07/12/2015, 4
+TOPICA_5, MC_HD, Emma  Wung, 11/08/2019, 5
+TOPICA_15, MC_WN, Conan Kama, 15/04/2014, 5
+###
+TOPICA_2, MC_NQ, Bella lin, 29/07/2019, 1
+CD_7, MC_CR, Opan lan, 04/01/2018, 1
+TOPICA_9, MC_DE, Anna yin teu, 06/02/2018, 1
+TOPICA_14, MC_EW, Kun tue jinka, 12/02/2017, 1
+CD_16, MC_TO, Beijing han kun, 28/12/2018, 1
+CD_18, MC_AA, Una ena, 22/10/2017, 1
+TOPICA_19, MC_BB, Oin van oie, 11/03/2019, 1
+TOPICA_33, MC_REMA, Yun ninna, 09/07/2019, 1
+CD_3, MC_NA, Hung han, 17/11/2018, 2
+CD_8, MC_TY, Hanna jin, 05/02/2015, 2
+TOPICA_12, MC_RE, Yin ny, 09/07/2019, 2
+CD_13, MC_TH, Aquan onna, 16/03/2018, 2
+TOPICA_17, MC_EE, Dain tue yun kin, 30/11/2016, 2
+CD_1, MC_TK, David tue van kai, 23/05/2019, 3
+TOPICA_6, MC_TU, Quin bai, 01/06/2017, 3
+CD_11, MC_AW, Mumma em tue van, 08/10/2016, 3
+TOPICA_34, MC_REN, Bill tue bin, 09/07/2019, 3
+CD_4, MC_AN, Belji van dan, 13/09/2016, 4
+TOPICA_10, MC_DA, Olin van pun, 07/12/2015, 4
+TOPICA_5, MC_HD, Emma wung, 11/08/2019, 5
+TOPICA_15, MC_WN, Conan kama, 15/04/2014, 5
+###
+TOPICA_5, MC_HD, Emma wung, 11/08/2019, 5
+TOPICA_2, MC_NQ, Bella lin, 29/07/2019, 1
+TOPICA_33, MC_REMA, Yun ninna, 09/07/2019, 1
+TOPICA_12, MC_RE, Yin ny, 09/07/2019, 2
+TOPICA_34, MC_REN, Bill tue bin, 09/07/2019, 3
+TOPICA_19, MC_BB, Oin van oie, 11/03/2019, 1
+###
+tue
+van
