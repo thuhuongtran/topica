@@ -19,8 +19,10 @@ public class MessageClient {
     }
 
     protected void listen() {
+        int count = 0;
         while (true) {
             System.out.println("-------Response-------------");
+            System.out.println(String.format("Client. ID = %d", ++count));
             try (
                     Socket client = new Socket(Common.HOST_NAME, Common.PORT_NUMBER);
                     DataOutputStream out = new DataOutputStream(client.getOutputStream());

@@ -34,12 +34,13 @@ public class ServerUtils {
         }
     }
 
-    protected Message checkInsert(String phoneNumber, Common.Status status, List<User> users) {
+    protected Message checkInsert(String phoneNumber, Common.Status status, List<User> users, Message receiveMsg, User user) {
         if (status.equals(Common.Status.READY)) {
             Message msg = messageUtils.createInsertResponse(phoneNumber,
                     Common.ResultCode.OK);
-            users.add(new User(messageUtils.getValueByTag(msg, Common.Tag.PhoneNumber),
-                    messageUtils.getValueByTag(msg, Common.Tag.Name)));
+            user.setPhone(messageUtils.getValueByTag(receiveMsg, Common.Tag.PhoneNumber));
+            user.setName( messageUtils.getValueByTag(receiveMsg, Common.Tag.Name));
+            users.add(user);
             return msg;
         } else {
             return messageUtils.createInsertResponse(phoneNumber,
@@ -51,10 +52,9 @@ public class ServerUtils {
         return messageUtils.createCommitResponse(phone, Common.ResultCode.OK);
     }
 
-    protected Message checkSelect(Common.Status status, String phone, Message msg) {
+    protected Message checkSelect(Common.Status status, String phone, User user) {
         if (status.equals(Common.Status.SELECT)) {
-            return messageUtils.createSelectResponse(phone,
-                    messageUtils.getValueByTag(msg, Common.Tag.Name));
+            return messageUtils.createSelectResponse(phone, user.getName());
         } else {
             return messageUtils.createSelectResponse(phone);
         }

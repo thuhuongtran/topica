@@ -39,20 +39,21 @@ public class MessageServer extends Thread {
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
                 System.out.println("It's now: " + sdf.format(now.getTime()));
                 System.out.println(String.format("Connected client. ID = %d", ++count));
-                ServerThread thread = new ServerThread(socket);
-                thread.start();
+
+                SingleSocket singleSocket = new SingleSocket(socket);
+                singleSocket.run();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            System.out.println("Stop connections.");
         }
     }
 
-    class ServerThread extends Thread {
+    class SingleSocket {
         private Socket socket;
         private Common.Status status = Common.Status.INIT;
         private User user;
 
-        public ServerThread(Socket socket) {
+        public SingleSocket(Socket socket) {
             this.socket = socket;
             user = new User();
         }
@@ -71,17 +72,16 @@ public class MessageServer extends Thread {
             String phoneNumber = messageUtils.getValueByTag(msg, Common.Tag.PhoneNumber);
             Message returnMsg = new Message();
             if (cmdCode.equals(Common.CmdCode.INSERT)) {
-                returnMsg = serverUtils.checkInsert(phoneNumber, status, users);
+                returnMsg = serverUtils.checkInsert(phoneNumber, status, users, msg, user);
             } else if (cmdCode.equals(Common.CmdCode.COMMIT)) {
                 returnMsg = serverUtils.checkCommit(phoneNumber);
             } else if (cmdCode.equals(Common.CmdCode.SELECT)) {
-                returnMsg = serverUtils.checkSelect(status, phoneNumber, msg);
+                returnMsg = serverUtils.checkSelect(status, phoneNumber, user);
             }
             out.write(messageUtils.getBytes(returnMsg));
             return returnMsg;
         }
 
-        @Override
         public void run() {
             try (
                     DataInputStream in = new DataInputStream(socket.getInputStream());
@@ -114,8 +114,8 @@ public class MessageServer extends Thread {
                         .equals(Common.ResultCode.OK.name())) {
                     returnMsg = handle(in, out, Common.CmdCode.SELECT);
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                System.out.println("Stop connections.");
             }
         }
     }

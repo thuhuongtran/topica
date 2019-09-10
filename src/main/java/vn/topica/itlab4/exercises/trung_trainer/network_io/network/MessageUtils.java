@@ -67,7 +67,7 @@ public class MessageUtils {
         payloads.add(new Payload(Common.Tag.PhoneNumber, phone));
         int key = ran.nextInt(100);
         int tmp = ran.nextInt(5);
-        if (tmp == 1 || tmp == 3 || tmp == 4 || tmp == 5) {
+        if (tmp == 1 || tmp == 3 || tmp == 5) {
             payloads.add(new Payload(Common.Tag.Key, "topica"));
         } else
             payloads.add(new Payload(Common.Tag.Key,
