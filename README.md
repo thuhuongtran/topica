@@ -4,6 +4,8 @@
 #### `Bài tập Thầy Trung:`
 **java/main/vn/topica/itlab4/exercises/trung_trainer**
 https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer
+#### `Bài tập NETWORK-IO Thầy Thanh:`
+https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/network_io
 #### `Bài tập Thầy Song:`
  **java/main/vn/topica/itlab4/exercises/song_trainer**
  https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/song_trainer
