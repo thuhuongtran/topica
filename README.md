@@ -7,8 +7,9 @@ https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itl
 #### `Bài tập NETWORK-IO Thầy Thanh:`
 https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/network_io
 #### `Bài tập Thầy Song:`
- **java/main/vn/topica/itlab4/exercises/song_trainer**
- https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/song_trainer
+  >**[`Bài tập MVC`](https://github.com/thuhuongtran/topica/tree/frontend/mvc)**  
+  >**[`JAVA folder`](https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/song_trainer)**
+ 
 #### File-run folder: test/exercises
 
 ### *FRONTEND* exercises branch: [`frontend`](https://github.com/thuhuongtran/topica/tree/frontend)
