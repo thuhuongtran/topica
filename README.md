@@ -8,7 +8,8 @@
   >https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/network_io
 #### `Bài tập Thầy Song:`
   >**[`Bài tập MVC`](https://github.com/thuhuongtran/topica/tree/frontend/mvc)**  
-  >**[`JAVA folder: song_trainer`](https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/song_trainer)**
+  >**[`JAVA folder: song_trainer`](https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/song_trainer)**  
+  >**[`Load File CSV with Spring`](https://github.com/thuhuongtran/topica/tree/master/csv_file)**
  
 #### File-run folder: test/exercises
 
