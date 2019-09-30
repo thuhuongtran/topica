@@ -10,10 +10,16 @@ public class User implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id")
     private Integer id;
+
+    @Column(name = "name")
     private String name;
+    @Column(name = "mail")
     private String mail;
+    @Column(name = "phone")
     private String phone;
+    @Column(name = "pass")
     private String pass;
 
     public User() {
@@ -24,10 +30,6 @@ public class User implements Serializable {
         this.mail = mail;
         this.phone = phone;
         this.pass = pass;
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
     }
 
     public Integer getId() {

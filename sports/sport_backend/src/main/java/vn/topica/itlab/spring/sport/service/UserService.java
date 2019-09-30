@@ -5,13 +5,13 @@ import vn.topica.itlab.spring.sport.entity.User;
 import java.util.List;
 
 public interface UserService {
-    List<User> findAllUser();
+    List<User> findAll();
 
     User findById(Integer id);
 
-    void save(User blog);
+    void save(User user);
 
-    void remove(User blog);
+    void remove(User user);
 
     User findByMailAndPass(String mail, String pass);
 }

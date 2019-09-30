@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> findAllUser() {
+    public List<User> findAll() {
         return (List<User>) respository.findAll();
     }
 
@@ -27,13 +27,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void save(User blog) {
-        respository.save(blog);
+    public void save(User user) {
+        respository.save(user);
     }
 
     @Override
-    public void remove(User blog) {
-        respository.delete(blog);
+    public void remove(User user) {
+        respository.delete(user);
     }
 
     @Override

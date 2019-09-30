@@ -1,35 +1,28 @@
 package vn.topica.itlab.spring.sport.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.util.UriComponentsBuilder;
 import vn.topica.itlab.spring.sport.entity.User;
 import vn.topica.itlab.spring.sport.service.UserService;
 
 import java.util.List;
 
 @RestController
-public class Controller {
+public class UserController {
 
     private UserService service;
 
     @Autowired
-    public Controller(UserService service) {
+    public UserController(UserService service) {
         this.service = service;
-    }
-
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String hello(){
-        return "Hello World.";
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     public ResponseEntity<List<User>> findAllUser() {
-        List<User> users = service.findAllUser();
+        List<User> users = service.findAll();
         if (users.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
