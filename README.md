@@ -6,7 +6,7 @@
   >**[`Bai tap JDBC`](https://github.com/thuhuongtran/topica/tree/master/jdbc)**
 
 #### `Bài tập NETWORK-IO Thầy Thanh:`
-  >https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/network_io
+  >**[`Network IO`](https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/network_io)**  
 #### `Bài tập Thầy Song:`
   >**[`Bài tập MVC`](https://github.com/thuhuongtran/topica/tree/frontend/mvc)**  
   >**[`JAVA folder`](https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/song_trainer)**  
