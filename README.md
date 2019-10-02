@@ -14,7 +14,7 @@
  
 #### `Bài tập Thầy Huy:`
   >**[`Spring MVC small website`](https://github.com/thuhuongtran/topica/tree/master/sports)**  
-  >**[`Spring ORM`](https://github.com/thuhuongtran/topica/tree/master/jdbc)**  
+  >**[`Spring ORM`](https://github.com/thuhuongtran/topica/tree/master/spring_jpa)**  
   
 #### File-run folder: test/exercises
 
