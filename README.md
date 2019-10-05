@@ -1,9 +1,9 @@
 # TOPICA EXERCISES 
-### *JAVA* exercises branch: [`thuhuong`](https://github.com/thuhuongtran/topica/tree/thuhuong)
-#### Source-code folder: java/main/vn/topica/itlab4/exercises
+
 #### `Bài tập Thầy Trung:`
   >**[`JAVA folder`](https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer)**  
-  >**[`Bai tap JDBC`](https://github.com/thuhuongtran/topica/tree/master/jdbc)**
+  >**[`Bai tap JDBC`](https://github.com/thuhuongtran/topica/tree/master/jdbc)**  
+   >**[`Bai tap Java 8`]( https://github.com/thuhuongtran/topica/tree/master/java8)**
 
 #### `Bài tập NETWORK-IO Thầy Thanh:`
   >**[`Network IO`](https://github.com/thuhuongtran/topica/tree/thuhuong/src/main/java/vn/topica/itlab4/exercises/trung_trainer/network_io)**  
