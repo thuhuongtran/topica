@@ -1,26 +1,22 @@
 package topica.itlab.java8;
 
-import topica.itlab.java8.entity.ClassOfSchool;
-import topica.itlab.java8.entity.Subject;
-import topica.itlab.java8.factory.AppFactory;
-
-import java.util.Map;
+import topica.itlab.java8.factory.StageFactory;
 
 public class App {
-    private static AppFactory factory = AppFactory.INSTANCE;
+    private static StageFactory stage = StageFactory.INSTANCE;
 
     public static void main(String[] args) {
         System.out.println("---------------------Ex1------------------------");
-        factory.countStudentsInSchool();
+        stage.countStudentInSchool();
         System.out.println("\n---------------------Ex2------------------------");
-        Map<ClassOfSchool, Map<Subject, Double>> averageScoreOfClass = factory.averageScore();
+        stage.averageScoreInSchool();
         System.out.println("\n---------------------Ex3------------------------");
-        factory.getClassHasMaxScore(averageScoreOfClass);
+        stage.getClassHasMaxAverageInSchool();
         System.out.println("\n---------------------Ex4------------------------");
-        factory.getBestWorstStudents();
+        stage.getBestWorstStudents();
         System.out.println("\n---------------------Ex5------------------------");
-        factory.maxScoreByDomain();
+        stage.maxScoreByDomain();
         System.out.println("\n---------------------Ex6------------------------");
-        factory.maxScoreAndMaxRegisterByDomain();
+        stage.getDomainHasMaxScoreAndMaxRegister();
     }
 }

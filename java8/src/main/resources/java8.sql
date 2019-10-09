@@ -65,3 +65,18 @@ AND c.school_id = sc.id
 AND sc.id = 1
 ORDER BY scid ASC,cid ASC,sjid ASC, stid ASC;
 
+
+SELECT sc.id AS scid , c.id as cid, sj.domain,
+avg(ss.score) AS avga
+FROM jv8_student_subject AS ss
+JOIN jv8_student AS s 
+JOIN jv8_subject AS sj
+JOIN jv8_class AS c 
+JOIN jv8_school AS sc
+WHERE ss.st_id = s.id
+AND ss.sj_id = sj.id
+and c.id = s.class_id
+AND c.school_id = sc.id
+AND sc.id = 1 AND domain = 'PHYSICS' AND c.id = 18
+GROUP BY cid
+ORDER BY scid ASC,cid ASC;
