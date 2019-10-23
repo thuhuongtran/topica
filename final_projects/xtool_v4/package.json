@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.1",
+    "react-scripts": "3.1.2",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.1",
+    "mysql": "^2.17.1"
+  },
+  "name": "logs",
+  "version": "1.0.0",
+  "description": "\"convert mongDB to MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SonPN",
+  "license": "ISC"
+}
