@@ -1,0 +1,55 @@
+/* Add here all your css styles (customizations) */
+.x-search{height: 37px;}
+.x-top-header a{padding: 0 5px;color:#d1dac9}
+#js-header{box-shadow: 1px 1px 2px #ece8e8;}
+.x-ta-l{text-align: left !important;}
+del{margin-left: 30px;font-weight: bold;}
+.x-tieude{border-bottom: 1px solid #3b5998;}
+.x-tieude span{display: inline-block;background: #3b5998;padding: 5px;color: #fff;}
+.x-topic{background: #e6e6e6;border-bottom: 1px solid #d5d4d4;padding: 10px 20px 10px 10px;font-weight: bold; }
+.x-lesson-disabled{color:red;}
+.x-lesson-disabled a{color:red;cursor: not-allowed; }
+.x-lesson-current{color: #4e75a7;}
+.x-lesson-current a{color:#4e75a7;font-weight: bold;}
+.list-lesson span{color:red;cursor: not-allowed;}
+/* carouselCus1 */
+.x-mt-12{margin-top: 120px !important;}
+.js-next.x-mt-12{margin-right: -2px !important;}
+#carouselCus1 .slick-list{display: none;}
+.fog{
+    background: #ff000000;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10000;
+}
+.yt-uix-sessionlink{display: none;}
+
+.facebook_chat{
+    transition: all .5s;
+    width: 300px;
+    bottom: -355px;
+    right:0px;
+    position: fixed;
+    background: #3b5998;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.facebook_chat h5{
+    cursor: pointer;
+}
+.facebook_chat i{
+    margin-top: 5px;
+}
+
+.search-user{
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+.search-user button{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
