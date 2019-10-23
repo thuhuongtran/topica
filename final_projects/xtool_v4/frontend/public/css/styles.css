@@ -1,0 +1,734 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+*:focus {
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: #007bff !important;
+}
+
+.btn-info:fucus {
+  background-color: #17a2b8 !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.full-width {
+  width: 100% !important;
+  transition: 0.5s;
+}
+
+#sideNav {
+  margin-left: 0px !important;
+  transition: 0.5s;
+  position: fixed;
+  height: calc(100vh - 65px);
+}
+#sideNav.hide {
+  margin-left: -250px !important;
+  transition: 0.5s;
+}
+
+.box_menu {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 8px;
+}
+.box_menu i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.box-cheat-log {
+  padding-bottom: 30px;
+}
+.box-cheat-log input, .box-cheat-log select {
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 5px;
+  width: 200px;
+  height: 33px;
+}
+
+div {
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+div ::-webkit-scrollbar {
+  width: 5px;
+}
+div ::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+div ::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+#profileMenu {
+  display: none;
+}
+
+.mg-left0 {
+  margin-left: 0 !important;
+  transition: 0.5s;
+}
+
+@media (max-width: 992px) {
+  .u-sidebar-navigation-v1 {
+    top: auto;
+  }
+}
+.body-chart {
+  padding: 5px;
+}
+
+.qllh-header {
+  padding: 20px 0px;
+}
+
+.open-class.mg-left .box-xtool {
+  width: calc(100% - 250px);
+}
+.open-class.mg-left0 .box-xtool {
+  width: 100%;
+}
+
+.body-chart, .xtool-renderlink {
+  margin-left: 250px;
+  transition: 0.5s;
+}
+
+.vcrx-qllh {
+  transition: 0.5s;
+  margin-left: 250px;
+}
+@media (max-width: 992px) {
+  .vcrx-qllh {
+    margin-left: 250px;
+  }
+}
+.vcrx-qllh.vcrx-qllh-login {
+  margin-left: 0;
+  height: 100vh;
+  background: url(./../images/sunset-2983614_1920.jpg);
+  background-size: cover;
+  padding-top: 100px;
+}
+.vcrx-qllh .modal-title {
+  display: inline-block;
+  width: 100%;
+  text-align-last: center;
+}
+.vcrx-qllh .box-content-filter {
+  padding: 10px;
+}
+.vcrx-qllh .box_login {
+  max-width: 450px;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.vcrx-qllh .box_login .box_image {
+  text-align: center;
+}
+.vcrx-qllh .box_login .box_image img {
+  width: 120px;
+}
+.vcrx-qllh .box_login .formlabel {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 5px;
+}
+.vcrx-qllh .box_login table {
+  width: 100%;
+}
+.vcrx-qllh .box_login .form_label {
+  width: 150px;
+  padding-bottom: 20px;
+  text-align: right;
+  padding-right: 20px;
+}
+.vcrx-qllh .box_login .form_input {
+  padding-bottom: 20px;
+}
+.vcrx-qllh .box_login ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+.vcrx-qllh .box_login :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(0, 0, 0, 0.5);
+}
+.vcrx-qllh .box_login ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(0, 0, 0, 0.5);
+}
+.vcrx-qllh .box_login input {
+  width: 100%;
+  height: 40px;
+  width: 100%;
+}
+.vcrx-qllh .box_login button {
+  min-width: 250px;
+  font-weight: bold;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  background: #dbac69;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.5;
+  border: 0;
+  border-color: transparent;
+}
+.vcrx-qllh .box_login button:hover {
+  background: #000;
+  color: #dbac69;
+  transition: 0.5;
+}
+.vcrx-qllh .box_login .support {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.vcrx-qllh .container {
+  max-width: 100% !important;
+}
+.vcrx-qllh #modal-list-student .modal-content {
+  padding: 20px;
+}
+.vcrx-qllh #modal-list-student .modal-content .modal-title {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.vcrx-qllh .group-filter-class .running tr td:nth-child(5) p {
+  background: #00f1ff3b;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+.vcrx-qllh .group-filter-class .manage-label {
+  line-height: 33px;
+  margin-right: 10px;
+}
+.vcrx-qllh .group-filter-class .box-filter {
+  display: flex;
+}
+.vcrx-qllh .group-filter-class .box-filter select, .vcrx-qllh .group-filter-class .box-filter .form-control {
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 0;
+}
+.vcrx-qllh .group-filter-class .box-filter .form-control {
+  cursor: pointer;
+}
+.vcrx-qllh .group-filter-class .box-filter .form-control:last-child {
+  margin-right: 0;
+}
+.vcrx-qllh .group-filter-class .box-filter .btn-filter {
+  min-width: 200px;
+}
+.vcrx-qllh .group-filter-class .box-content-filter {
+  padding-top: 20px;
+}
+.vcrx-qllh .group-filter-class .box-content-filter #student:hover, .vcrx-qllh .group-filter-class .box-content-filter .student-number:hover, .vcrx-qllh .group-filter-class .box-content-filter #error:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.vcrx-qllh .group-filter-class .box-content-filter .table td, .vcrx-qllh .group-filter-class .box-content-filter .table th {
+  padding: 5px;
+  text-align: center;
+}
+.vcrx-qllh .group-filter-class .box-content-filter .table td .btn, .vcrx-qllh .group-filter-class .box-content-filter .table th .btn {
+  display: block;
+  margin: auto;
+  min-width: 80px;
+  margin-bottom: 5px;
+}
+.vcrx-qllh .group-filter-class .box-content-filter .table td .btn:last-child, .vcrx-qllh .group-filter-class .box-content-filter .table th .btn:last-child {
+  margin-bottom: 0;
+}
+.vcrx-qllh .group-filter-class .box-content-filter .table th {
+  vertical-align: top;
+}
+.vcrx-qllh .box-group-chat {
+  position: fixed;
+  right: 0;
+  width: 22%;
+  top: 70px;
+}
+.vcrx-qllh .group-info-class .group-chat {
+  margin-top: 15px;
+}
+@media (max-width: 1366px) {
+  .vcrx-qllh .group-info-class .group-chat {
+    margin-top: 5px;
+  }
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat {
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  position: relative;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .chat-title {
+  height: 40px;
+  text-align: center;
+  background: #dbac69;
+  color: #fff;
+  line-height: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .chat-tab {
+  display: flex;
+  width: 100%;
+  background-color: #ccc;
+  height: 30px;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .chat-tab .chat-tab-content {
+  flex: 1;
+  border-right: 1px solid #fff;
+  display: inline-block;
+  line-height: 30px;
+  text-align-last: center;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 13px;
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .chat-tab .chat-tab-content:last-child {
+  border-right: 0;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .chat-tab .chat-tab-content.active {
+  background-color: #e62154;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat {
+  height: 500px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+@media (max-width: 1366px) {
+  .vcrx-qllh .group-info-class .group-chat .box-chat .content-chat {
+    height: 400px;
+  }
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat #user-list-chat li {
+  background: #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  padding: 5px;
+  margin-left: 4px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat #user-list-chat li .user-name {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .box-option {
+  width: 100%;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .box-option .chat-user {
+  padding: 5px;
+  width: 100%;
+  background-color: #ccc;
+  height: 30px;
+  line-height: 20px;
+  font-size: 14px;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .box-option .chat-user:hover {
+  background-color: #aaa;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message {
+  width: 85%;
+  margin-bottom: 10px;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message .box-info-message {
+  display: flex;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message .box-info-message .message-name {
+  flex: 2;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message .box-info-message .message-name span {
+  font-size: 14px;
+  display: inline-block;
+  width: 120px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media (min-width: 1600px) {
+  .vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message .box-info-message .message-name span {
+    width: 160px;
+  }
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message .box-info-message .message-time {
+  flex: 1;
+  text-align: right;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message .box-info-message .message-time span {
+  font-size: 12px;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message .box-content-message span {
+  word-break: break-word;
+  background-color: #f2f2f2;
+  display: inline-block;
+  width: 100%;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message.received-message {
+  float: left;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message.local-message {
+  float: right;
+}
+.vcrx-qllh .group-info-class .group-chat .box-chat .content-chat .chat-message.local-message .box-content-message span {
+  text-align: left;
+  background-color: #dbac69;
+  color: #fff;
+}
+.vcrx-qllh .group-info-class .group-chat .box-input .input-chat {
+  border-bottom: 1px solid #e5e5e5;
+  background: #f7f7f7 !important;
+  width: 100%;
+  border-radius: 0;
+  border-top: 0;
+  height: 40px;
+  display: inline-block;
+  line-height: 30px;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.box-xtool {
+  padding: 20px;
+}
+.box-xtool .box-gen-link {
+  display: flex;
+  margin-bottom: 20px;
+}
+.box-xtool .box-gen-link ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+.box-xtool .box-gen-link :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(0, 0, 0, 0.5);
+}
+.box-xtool .box-gen-link ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(0, 0, 0, 0.5);
+}
+.box-xtool .box-gen-link input, .box-xtool .box-gen-link button {
+  flex: 1;
+  border-radius: 0;
+  margin-left: 10px;
+}
+.box-xtool .box-gen-link input:first-child {
+  margin-left: 0;
+}
+.box-xtool .box-gen-link .form-label {
+  line-height: 33px;
+}
+.box-xtool .box-gen-link .form-label-user {
+  margin-left: 10px;
+}
+.box-xtool .box-check-log {
+  display: flex;
+  margin-bottom: 20px;
+}
+.box-xtool .box-check-log ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+.box-xtool .box-check-log :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(0, 0, 0, 0.5);
+}
+.box-xtool .box-check-log ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(0, 0, 0, 0.5);
+}
+.box-xtool .box-check-log .form-control {
+  flex: 1;
+  margin-right: 10px;
+}
+.box-xtool .box-check-log .btn.btn-info {
+  width: 200px;
+  margin-left: 20px;
+}
+.box-xtool .box-check-log .choose-date {
+  margin-right: 10px;
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+.box-xtool .box-check-log .choose-date-input {
+  box-shadow: none;
+  height: 34px;
+}
+
+#js-header .logo-vcrx {
+  width: 94px;
+  height: 30px;
+}
+#js-header ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  /* Firefox */
+}
+#js-header :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(0, 0, 0, 0.5);
+}
+#js-header ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.input-action {
+  text-align: center;
+}
+
+.title-err {
+  color: #FFCC33;
+  text-align: center;
+}
+
+.header-box-err {
+  background: #000000;
+}
+
+.content-err {
+  text-align: center;
+}
+
+.badge {
+  display: inline;
+  position: absolute;
+  right: 20px;
+  color: red;
+  font-size: 100% !important;
+}
+
+.content-err input {
+  cursor: pointer;
+}
+
+.label-section {
+  margin-right: 10px;
+}
+
+.class-list {
+  text-align: center;
+  padding: 20px;
+}
+
+.section-class {
+  display: inline-block;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.btn-create-class {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.btn-filter {
+  display: inline-block;
+  width: 70px;
+}
+
+.mdb-select {
+  height: 33px;
+}
+
+.group-thailand {
+  padding-bottom: 30px;
+}
+.group-thailand .select-open {
+  width: 200px;
+  display: inline-block;
+}
+.group-thailand .btn-create {
+  margin-left: 15px;
+}
+
+.list-room .select-time {
+  width: 200px;
+  display: inline-block;
+}
+.list-room .btn-filter {
+  margin-left: 20px;
+  margin-bottom: 2px;
+}
+
+.notify-details .notify-btn {
+  margin-right: 7px;
+}
+.notify-details .check-send {
+  margin-left: 20px;
+  opacity: 0.8;
+  font-size: 15px;
+}
+.notify-details .noti-content {
+  max-width: 300px;
+  word-wrap: break-word;
+}
+.notify-details .noti-status {
+  width: 120px;
+}
+.notify-details .noti-control {
+  width: 200px;
+}
+.notify-details .noti-title {
+  max-width: 150px;
+  word-wrap: break-word;
+}
+
+.list-noti {
+  display: flex;
+  margin-top: 15px;
+  font-family: "Courier New", Courier, monospace;
+}
+.list-noti .notifies {
+  flex: 2;
+  list-style: none;
+  display: inline-block;
+}
+.list-noti .btn-notify {
+  flex: 1;
+}
+
+.add-notify {
+  width: 900px;
+  margin: 30px auto;
+}
+.add-notify .input-notify {
+  padding: 5px;
+  margin-bottom: 15px;
+}
+.checkbox_notify {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.page-numbers {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-numbers li {
+  color: #3e8ccc;
+  user-select: none;
+  cursor: pointer;
+  margin: 0 3px;
+  padding: 0 5px;
+  border: 1px solid #3e8ccc;
+  text-align: center;
+  border-radius: 2px;
+}
+.page-numbers li:not(.active):hover {
+  background: #3e8ccc;
+  color: white;
+}
+.page-numbers li.active {
+  border-color: grey;
+  color: white;
+  background: grey;
+  cursor: default;
+}
+
+.table tbody tr:nth-child(2n+1) {
+  background: #d2d2d280;
+}
+
+.table td, th {
+  padding: 10px 7px;
+}
+
+.table {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.news-per-page {
+  margin-bottom: 15px;
+}
+
+.label_checkbox {
+  margin-right: 150px;
+}
+
+.device-notify {
+  margin-top: 20px;
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.fa-times-circle {
+  color: red;
+}
+
+.add-noti {
+  margin-top: 20px;
+}
+
+.label_noti {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.noti-title-head {
+  color: #17a2b8;
+}
+
+/*# sourceMappingURL=styles.css.map */
